@@ -1,0 +1,211 @@
+body {
+        
+    background-image: url("assets/fundo.png");
+    background-size: cover;
+    
+}
+
+
+.header {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    border-top: 3px solid white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    flex: 1;
+}
+
+
+.header img {
+    width: 15%;
+}
+
+.content {
+    display: flex;
+}
+
+
+
+
+.registration-form {
+    border-radius: 20%;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    width: 40vw;
+
+}
+
+
+.metroid{
+    padding-top: 30px;
+    height: 50px;
+}
+.metroid img{
+    width: 100%;
+    height: 80%;
+}
+
+
+h2 {
+    font-size: 35px;
+}
+
+form {
+    font-size: 22px;
+}
+
+*{  
+    color: white;
+}
+
+input {
+    font-size: 22px;
+    background: transparent;
+}
+
+.input {
+    padding-top: 10px;
+}
+
+
+button {
+    color: black;
+    font-size: 25px;
+}
+
+#black-friday{
+    position: absolute;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.black-friday {
+    position: relative;
+    width: 40%; 
+    left: 700px;
+    transform: rotate(40deg);
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+}
+
+.slide-show {
+
+    margin:0;
+    padding-left: 50px;
+    width: 55vw;
+    height: 450px;
+    overflow: hidden; 
+
+}
+
+.navigation {
+    justify-content: center;
+    width: 55vw;
+    display: flex;
+}
+
+
+.bar {
+    border-radius: 10px;
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.bar:hover {
+    background: #fff
+}
+
+.slides {
+
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.slide-show img {
+    border-radius: 4%;
+    width: 90%;
+} 
+
+.footer {
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+a {
+    padding: 5px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a:hover i {
+    color: aqua
+}
+
+
